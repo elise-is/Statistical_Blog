@@ -57,7 +57,7 @@ e.g., principal components analysis (PCA).
 
 ### 2.1.1 直接删除有缺失值的样本
 
-最简单粗暴的方法就是直接na.omit()，但是我们可以看到原来198个样本被删到了只剩3个。
+最简单粗暴的方法就是直接na.omit()，但是我们可以看到原来198个样本被删到了只剩4个。
 
 ``` r
 test_na_rm <- na.omit(test_na)
@@ -74,8 +74,7 @@ dim(test_na_rm)
 
 ### 2.1.2 80%法则
 
-80%法则 (Bijlsma et al. 2006)
-认为，当某一物质的非缺失部分低于总样本量的80%时，建议删除该物质。
+80%法则 (Bijlsma et al. 2006)认为，当某一物质的非缺失部分低于总样本量的80%时，建议删除该物质。Modified 80%法则认为， 当某一物质的非缺失部分低于所有生物学亚组的80%时，建议删除该物质。
 
 ``` r
 # remove variables with missing > 20% 
@@ -248,14 +247,10 @@ Core functions for GSimp are available at:
 =========================
 
 请参考以下两篇文章： Missing Value Imputation Approach for Mass
-Spectrometry-based Metabolomics Data (<span class="citeproc-not-found"
-data-reference-id="wei2017b">**???**</span>)， GSimp: A Gibbs sampler
-based left-censored missing value imputation approach for metabolomics
-studies (<span class="citeproc-not-found"
-data-reference-id="wei2017a">**???**</span>)。结果显示：
-在代谢组学的数据中，对于MCAR/MAR的缺失，推荐使用missForest进行补值；
-对于left-censored MNAR的缺失，推荐使用GSimp进行补值。 注：
-以上方法还需在其他类型的数据中进行系统性的比较。
+Spectrometry-based Metabolomics Data (Wei et al.
+2017)， GSimp: A Gibbs sampler based left-censored missing value imputation approach for metabolomics
+studies (Wei et al. 2017)。结果显示：在代谢组学的数据中，对于MCAR/MAR的缺失，推荐使用missForest进行补值；
+对于left-censored MNAR的缺失，推荐使用GSimp进行补值。 注：以上方法还需在其他类型的数据中进行系统性的比较。
 
 # 4. 缺失值补值可视化软件 – MetImp
 ================================
@@ -266,8 +261,7 @@ data-reference-id="wei2017a">**???**</span>)。结果显示：
 -   Step 1: 上传数据，数据格式请保持和我们网站上example data一致；
     即横行为样本，纵列为物质，第一行为物质名称，第一列为样本名称，第二列为组别信息；
 -   Step 2: 选择缺失值是属于MCAR/MAR， 还是MNAR；
--   Step 3:
-    选择物质删除标准，即非缺失部分低于总样本量的百分之多少时删除该物质；
+-   Step 3: 选择物质删除标准，非缺失部分低于总样本量的百分之多少时删除该物质；
 -   Step 4: Run；
 -   Step 5: 下载补值后的完整数据。
 
@@ -316,7 +310,11 @@ Botstein, and R B Altman. 2001. “Missing value estimation methods for
 DNA microarrays.” *Bioinformatics (Oxford, England)* 17 (6):520–25.
 <https://doi.org/10.1093/bioinformatics/17.6.520>.
 
-Wei, Runmin, Jingye Wang, Erik Jia, Tianlu Chen, Yan Ni, and Wei Jia.
+Runmin Wei, Jingye Wang, Erik Jia, Tianlu Chen, Yan Ni, and Wei Jia.
 2017. “GSimp: A Gibbs sampler based left-censored missing value
 imputation approach for metabolomics studies.” *bioRxiv*.
-<http://biorxiv.org/content/early/2017/08/26/177410.abstract>.
+<https://doi.org/10.1101/177410>.
+
+Runmin Wei, Jingye Wang, Mingming Su, Erik Jia, Tianlu Chen, and Yan Ni.
+2017. "Missing Value Imputation Approach for Mass Spectrometry-based Metabolomics Data."
+*bioRxiv*. doi: <https://doi.org/10.1101/171967>. 
