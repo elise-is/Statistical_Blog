@@ -317,4 +317,4 @@ imputation approach for metabolomics studies.” *bioRxiv*.
 
 Runmin Wei, Jingye Wang, Mingming Su, Erik Jia, Tianlu Chen, and Yan Ni.
 2017. "Missing Value Imputation Approach for Mass Spectrometry-based Metabolomics Data."
-*bioRxiv*. doi: <https://doi.org/10.1101/171967>. 
+*bioRxiv*. <https://doi.org/10.1101/171967>. 
