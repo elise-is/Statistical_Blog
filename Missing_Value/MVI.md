@@ -258,7 +258,7 @@ studies (Wei et al. 2017)。结果显示：在代谢组学的数据中，对于M
 # 4. 缺失值补值可视化软件 – MetImp
 ================================
 
-我们将以上各种补值方法(GSimp很快也会添加进去)做成了一个免费的web-tool:
+我们将以上各种补值方法 (GSimp很快也会添加进去) 做成了一个免费的web-tool:
 [MetImp](https://metabolomics.cc.hawaii.edu/software/MetImp/)。
 
 -   Step 1: 上传数据，数据格式请保持和我们网站上example data一致；
@@ -267,6 +267,13 @@ studies (Wei et al. 2017)。结果显示：在代谢组学的数据中，对于M
 -   Step 3: 选择物质删除标准，非缺失部分低于总样本量的百分之多少时删除该物质；
 -   Step 4: Run；
 -   Step 5: 下载补值后的完整数据。
+
+请cite我们的文章：
+- Runmin Wei, Jingye Wang, Mingming Su, Erik Jia, Tianlu Chen, and Yan Ni.
+2017. "Missing Value Imputation Approach for Mass Spectrometry-based Metabolomics Data." *Scientific Reports* (under revision).
+- Runmin Wei, Jingye Wang, Erik Jia, Tianlu Chen, Yan Ni, and Wei Jia.
+2017. “GSimp: A Gibbs sampler based left-censored missing value
+imputation approach for metabolomics studies.” *PLOS Computational Biology* (under revision).
 
 # 5. 参考文献
 ========
