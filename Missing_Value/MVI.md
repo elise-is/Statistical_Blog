@@ -268,12 +268,15 @@ studies (Wei et al. 2017)。结果显示：在代谢组学的数据中，对于M
 -   Step 4: Run；
 -   Step 5: 下载补值后的完整数据。
 
+
 请cite我们的文章：
 - Runmin Wei, Jingye Wang, Mingming Su, Erik Jia, Tianlu Chen, and Yan Ni.
-2017. "Missing Value Imputation Approach for Mass Spectrometry-based Metabolomics Data." *Scientific Reports* (under revision).
+2017. "Missing Value Imputation Approach for Mass Spectrometry-based Metabolomics Data." 
+*Scientific Reports* (under revision).
 - Runmin Wei, Jingye Wang, Erik Jia, Tianlu Chen, Yan Ni, and Wei Jia.
 2017. “GSimp: A Gibbs sampler based left-censored missing value
-imputation approach for metabolomics studies.” *PLOS Computational Biology* (under revision).
+imputation approach for metabolomics studies.” 
+*PLOS Computational Biology* (under revision).
 
 # 5. 参考文献
 ========
