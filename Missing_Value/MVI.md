@@ -3,10 +3,10 @@
 Attribution-NonCommercial-ShareAlike 4.0 International
 License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh).
 
-1. 简介
+# 1. 简介
 =======
 
-1.1 缺失值的分类
+## 1.1 缺失值的分类
 ----------------
 
 缺失值从数据分布上可被分为三类 (Gelman and Hill 2006, Little and Rubin
@@ -21,7 +21,7 @@ and missing not at random (MNAR)。
 
 目前大部分填补缺失值的方法都是基于MCAR和MAR，这两种情况也相对比较难区别，因此本文会将这两种情况合并起来讨论。
 
-1.2 缺失值的可视化
+## 1.2 缺失值的可视化
 ------------------
 
 我一般拿到数据的第一件事就是用Amelia package (Honaker, King, and
@@ -43,16 +43,16 @@ sum(is.na(test_na$Var_1))
 
     ## [1] 43
 
-1.3 为什么要对缺失值进行处理
+## 1.3 为什么要对缺失值进行处理
 ----------------------------
 
 对于MCAR，直接删除缺失的样本一般不会对结果产生偏差，但会减少样本数量；对于非完全随机确实特别是MNAR，如果缺失值较多则会对结果产生很大的偏移。另一方面，很多后续的统计检验要求完整的没有缺失值的数据集,
 e.g., principal components analysis (PCA).
 
-2. 目前常用的缺失值处理方法
+# 2. 目前常用的缺失值处理方法
 ===========================
 
-2.1 行删除
+## 2.1 行删除
 ----------
 
 ### 2.1.1 直接删除有缺失值的样本
@@ -102,7 +102,7 @@ dim(test_na_rm)
 
 去掉7个不符合80%法则的物质以后再用na.omit()删除有缺失的样本，最终的样本数量维持在了83个。
 
-2.2 单变量填补
+## 2.2 单变量填补
 --------------
 
 用单一变量的均值/中位数/二分之一最小值/零值进行补值，这种方法会导致数据分布的偏移，方差偏小，PCA上会看到一条补值导致的直线等问题。
@@ -148,7 +148,7 @@ test_na_zero_imp_df <- test_na
 test_na_zero_imp_df[is.na(test_na_zero_imp_df)] <- 0
 ```
 
-2.3 多变量填补
+## 2.3 多变量填补
 --------------
 
 多变量填补的前提是其他变量对于该变量的可预测性，用其他变量作为independent
@@ -244,7 +244,7 @@ test_na_GSimp_imp_df <- sim_GS_wrapper(test_na)
 Core functions for GSimp are available at:
 [GitHub](https://github.com/WandeRum/GSimp).
 
-3. 不同补值方法的结果比较
+# 3. 不同补值方法的结果比较
 =========================
 
 请参考以下两篇文章： Missing Value Imputation Approach for Mass
@@ -257,7 +257,7 @@ data-reference-id="wei2017a">**???**</span>)。结果显示：
 对于left-censored MNAR的缺失，推荐使用GSimp进行补值。 注：
 以上方法还需在其他类型的数据中进行系统性的比较。
 
-4. 缺失值补值可视化软件 – MetImp
+# 4. 缺失值补值可视化软件 – MetImp
 ================================
 
 我们将以上各种补值方法(GSimp很快也会添加进去)做成了一个免费的web-tool:
@@ -271,7 +271,7 @@ data-reference-id="wei2017a">**???**</span>)。结果显示：
 -   Step 4: Run；
 -   Step 5: 下载补值后的完整数据。
 
-参考文献
+# 5. 参考文献
 ========
 
 Bijlsma, Sabina, Ivana Bobeldijk, Elwin R. Verheij, Raymond Ramaker,
