@@ -1,3 +1,6 @@
+# 开发 R Package之夏威夷小白篇
+*Jingye Wang*  *Jan/15/2018*
+
 声明: 本文档采用知识共享署名-非商业性使用-相同方式共享 4.0
 国际许可协议进行许可。[Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International
