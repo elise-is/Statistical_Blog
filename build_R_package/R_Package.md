@@ -139,7 +139,8 @@ issues就可以啦。
 -   [官方手册：Writing R Extensions](https://cran.r-project.org/doc/manuals/R-exts.html)
 -   [Hadley Wickham：R packages](http://r-pkgs.had.co.nz/)
 
-本文所有内容请戳：
+本文所有内容请戳：https://github.com/elise-is/Statistical_Blog/tree/master/build_R_package
+
 希望你们玩儿的开心。
 
 
