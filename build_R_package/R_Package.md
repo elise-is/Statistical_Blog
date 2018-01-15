@@ -3,7 +3,7 @@
 Attribution-NonCommercial-ShareAlike 4.0 International
 License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh).
 
-1. 前言
+# 1. 前言
 =======
 
 最近捣饬了一个R
@@ -11,17 +11,17 @@ package，看了一些教程，走了一些弯路，流了一些眼泪，也有�
 现总结出一个夏威夷小白版本，希望对大家将来开发你们的第一个R
 package有所帮助。
 
-2. 正文
+# 2. 正文
 =======
 
-2.1 Step One: 安装所需要的package
+## 2.1 Step One: 安装所需要的package
 ---------------------------------
 
     require(devtools)
     devtools::install_github("klutometis/roxygen")
     require(roxygen2)
 
-2.2 Step Two: 建立自己package的目录文件
+## 2.2 Step Two: 建立自己package的目录文件
 ---------------------------------------
 
     # 比如说我想把文件夹建在桌面
@@ -91,7 +91,7 @@ NAMESPACE是一个让我很困惑的文件，我的NAMESPACE分成两个部分�
 
 前面的部分是对这个function的描述，内容未来会出现在R中的help部分。
 
-2.3 Step Three: 生成Annotations和更新NAMESPACE
+## 2.3 Step Three: 生成Annotations和更新NAMESPACE
 ----------------------------------------------
 
 document()会帮助你自动完成这一步。
@@ -102,7 +102,7 @@ document()会帮助你自动完成这一步。
 之后，在HonoluluWhite的文件夹中会多出一个文件夹man，里面是function的Annotations。
 ![](./figure/Screen_Shot_1.png)
 
-2.4 Step Four: 写教程--Vignette
+## 2.4 Step Four: 写教程--Vignette
 ------------------------------------
 
     use_vignette("my-vignette")
@@ -110,12 +110,12 @@ document()会帮助你自动完成这一步。
 这部分将来也会出现在R中的help页面里，也是最费时的一部分，但对于推广和应用还是非常重要的一个部分。
 
 
-2.5 Step Five: 打包成.tar.gz压缩文件
+## 2.5 Step Five: 打包成.tar.gz压缩文件
 ------------------------------------
 
     build()
 
-2.6 Step Six: 检查
+## 2.6 Step Six: 检查
 -------------------
 
 在上传CRAN之前需要现在本地检查下package里的错误和不规范的问题，尽量解决所有的warnings,
@@ -123,14 +123,14 @@ errors，和notes。
 
     check()
 
-2.7 Step Seven: 上传CRNA
+## 2.7 Step Seven: 上传CRNA
 ------------
 
 在[CRAN](https://cran.r-project.org/submit.html)上上传前面的.tar.gz压缩文件即可。
 CRAN的效率非常快，基本当天会给回复(不过很可能邮件会在spam里面)，按照邮件里提到的问题修改下minor
 issues就可以啦。
 
-3. 最后
+# 3. 最后
 =======
 
 最后，推荐一些我觉得值得一看的相关材料：
